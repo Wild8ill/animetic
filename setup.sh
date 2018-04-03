@@ -6,4 +6,5 @@ convert -coalesce $gifname gifframes/frame.png
 echo "GIF split"
 ./upres.py
 chmod +x bg.sh
-./bg.sh
+nohup ./bg.sh &
+exit
